@@ -1,129 +1,199 @@
-*{
+* {
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     /* background-color: red; */
-    width: 1145px;
+    width: 1240px;
     margin: 0 auto;
 }
-.width2{
-    width: 500px;
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.height{
-    height: 300px;
+
+a {
+    text-decoration: none;
 }
-.row{
+
+li {
+    list-style: none;
+}
+
+.row {
     display: flex;
     flex-direction: row;
 }
-.pd-100{
-    padding: 50px 60px;
-}
-.m{
-    margin: 10px;
-}
-.mt-15{
-    margin-top: 15px;
-}
-.g10{
-    gap: 10px;
-}
-.m-l{
-    margin-left: 50px;
-}
-.ml-300{
-    margin-left: 300px;
-}
-.m-t300{
-    margin-top: 300px;
-}
-.mt-150{
-    margin-top: 150px;
-}
-.m-l120{
-    margin-left: 120px;
-}
-.font-B{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.column{
+
+.column {
     display: flex;
     flex-direction: column;
 }
-.a-center{
+
+.a-center {
     align-items: center;
 }
-.j-between{
+
+.j-between {
     justify-content: space-between;
 }
-.j-around{
+
+.j-around {
     justify-content: space-around;
 }
-.left-img{
-    background-image: url("assets/left.png");
+
+.j-center {
+    justify-content: center;
 }
-.center-img{
-    background-image: url("assets/center.png");
+
+/* padding */
+.pt-24 {
+    padding-top: 28px;
 }
-.right-img{
-    background-image: url("assets/right.png");
-}
-.width-height{
-    width: 450px;
-    height: 500px;
-    object-fit: cover;
-}
-ul img{
-    height: 18px;
-    object-fit: contain;
-}
-a{
-    text-decoration: none;
-}
-button a{
-    font-size: 18px;
-    background-color: #E0BEA2;
-    color: white;
-}
-ul{
-    padding: 7px;
-    margin-top: 5px;
-    gap: 2px;
-    list-style: none;
-}
-.box{
-    border: 1px solid black;
-    height: 2px;
-    width: 165px;
-}
-.item img{
-    height: 280px;
-    width: 220px;
-    object-fit: fill;
-}
-.cat{
-    height: 40px;
-    width: 220px;
-    background-color: #E0BEA2;
-    padding: 10px 70px;
-}
-.btn{
-    background-color: #E0BEA2;
+
+/* Header */
+.header {
+    display: block;
     width: 100%;
-    cursor: pointer;
-    padding: 5px 42%;
+    position: relative;
+    background-image: url('./assets/FonFull.png');
+    background-position: center;
+    background-size: cover;
 }
-input{
-    width: 500px;
-    /* background-color: red; */
-    padding: 5px 200px;
-    /* font-size: 16px; */
+
+.burger-btn {
+    flex-basis: 5%;
 }
-.last{
-    height: 100px;
+
+.burger-btn>span>i {
+    font-size: 25px;
+}
+
+.nav {
+    flex-basis: 80%;
+}
+
+.nav>ul {
+    padding: 0 20px;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+}
+
+.header_icon_box {
+    flex-basis: 15%;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.nav-item {
+    line-height: 1.6;
+}
+
+.fa-solid,
+.fa-regular {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.nav_link {
+    font-family: 'Raleway';
+    font-style: normal;
     font-weight: 300;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 40px;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+.nav_link i {
+    transform: rotate(270deg);
+    margin-left: 3px;
+}
+
+/* starter */
+.starter {
+    height: 860px;
+}
+
+@media only screen and (max-width: 1240px) {
+    .container {
+        width: 1040px;
+    }
+
+}
+
+@media only screen and (max-width: 1040px) {
+    .container {
+        width: 840px;
+    }
+
+    .header {
+        background-image: url("./assets/FonTap.png");
+    }
+
+    .fa-solid,
+    .fa-regular {
+        font-size: 16px;
+    }
+
+    .nav_link {
+        font-size: 16px;
+    }
+    .nav_link i {
+        transform: rotate(270deg);
+        margin-left: 3px;
+        font-size: 12px;
+    }
+
+    .logo{
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .container {
+        width: 720px;
+    }
+
+}
+@media only screen and (max-width: 720px) {
+    .container {
+        width: 580px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 320px;
+    }
+    .header {
+        background-image: url("./assets/FonSingle.png");
+    }
+    .icons:nth-child(1){
+        display: none;
+    }
+    .icons:nth-child(2){
+        display: none;
+    }
+    .nav_list{
+        flex-direction: row-reverse;
+    }
+    .nav_link{
+        display: none;
+    }
+    .act{
+        display: block !important;
+    }
 }
