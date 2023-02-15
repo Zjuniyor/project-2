@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* background-color: red; */
+    width: 1145px;
+    margin: 0 auto;
+}
+.width2{
+    width: 500px;
+}
+.height{
+    height: 300px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.pd-100{
+    padding: 50px 60px;
+}
+.m{
+    margin: 10px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.g10{
+    gap: 10px;
+}
+.m-l{
+    margin-left: 50px;
+}
+.ml-300{
+    margin-left: 300px;
+}
+.m-t300{
+    margin-top: 300px;
+}
+.mt-150{
+    margin-top: 150px;
+}
+.m-l120{
+    margin-left: 120px;
+}
+.font-B{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.a-center{
+    align-items: center;
+}
+.j-between{
+    justify-content: space-between;
+}
+.j-around{
+    justify-content: space-around;
+}
+.left-img{
+    background-image: url("assets/left.png");
+}
+.center-img{
+    background-image: url("assets/center.png");
+}
+.right-img{
+    background-image: url("assets/right.png");
+}
+.width-height{
+    width: 450px;
+    height: 500px;
+    object-fit: cover;
+}
+ul img{
+    height: 18px;
+    object-fit: contain;
+}
+a{
+    text-decoration: none;
+}
+button a{
+    font-size: 18px;
+    background-color: #E0BEA2;
+    color: white;
+}
+ul{
+    padding: 7px;
+    margin-top: 5px;
+    gap: 2px;
+    list-style: none;
+}
+.box{
+    border: 1px solid black;
+    height: 2px;
+    width: 165px;
+}
+.item img{
+    height: 280px;
+    width: 220px;
+    object-fit: fill;
+}
+.cat{
+    height: 40px;
+    width: 220px;
+    background-color: #E0BEA2;
+    padding: 10px 70px;
+}
+.btn{
+    background-color: #E0BEA2;
+    width: 100%;
+    cursor: pointer;
+    padding: 5px 42%;
+}
+input{
+    width: 500px;
+    /* background-color: red; */
+    padding: 5px 200px;
+    /* font-size: 16px; */
+}
+.last{
+    height: 100px;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 40px;
+}
