@@ -130,6 +130,65 @@ li {
     .container {
         width: 1040px;
     }
+    .header{
+        background-image: url('./assets/FonFull.png');
+    }
+    .section2 h1{
+        margin-left: 10px;
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    .content{
+        margin-top: 55px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .item{
+        width: 250px;
+    }
+    .cat{
+        width: 250px;
+        background-color: #E0BEA2BF;
+        text-align: center;
+    }
+    .jumavoy{
+        width: 100%;
+        margin-top: 80px;
+        text-align: center;
+        font-size: 35px;
+       }
+       .jumavoy:nth-child(){
+        margin-top: 50px;
+       }
+       .jumavoy input{
+        font-size: 20px;
+        width: 90%;
+        height: 70px;
+       }
+       .jumavoy button{
+        width: 90%;
+        background-color: #E0BEA2BF;
+        height: 70px;
+        font-size: 40px;
+       }
+       .footer{
+        width: 100%;
+        display: flex;
+        margin-top: 250px;
+        text-align: center;
+       }
+       .last{
+        margin-left: 20px;
+        width: 250px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+       }
+       .section5{
+        display: none;
+       }
 
 }
 
@@ -166,11 +225,177 @@ li {
         width: 720px;
     }
 
+    .header{
+        background-image: url(assets/FonTap.png)
+    }
+    .section2 h1{
+        font-size: 40px;
+    }
+    .content{
+        margin-top: 40px;
+        margin-right: 50px;
+        gap: 15px;
+        width: 100%;
+        display: flex;
+    }
+    .item:nth-child(3){
+        display: none !important;
+    }
+    .item{
+        object-fit: cover;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+    .cat{
+        width: 200px;
+        background-color: #E0BEA2BF;
+        text-align: center;
+    }
+    .jumavoy{
+        width: 100%;
+        margin-top: 60px;
+        height: 50px;
+        text-align: center;
+        font-size: 25px;
+       }
+       .jumavoy:nth-child(){
+        margin-top: 50px;
+       }
+       .jumavoy input{
+        width: 100%;
+        height: 50px;
+       }
+       .jumavoy button{
+        width: 100%;
+        background-color: #E0BEA2BF;
+        height: 50px;
+        font-size: 30px;
+       }
+       .footer{
+        width: 100%;
+        display: flex;
+        margin-top: 250px;
+        text-align: center;
+       }
+       .last:first-child{
+        display: none;
+       }
+       .last{
+        margin-left: 20px;
+        width: 180px;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+       }
+       .section5{
+        width: 100%;
+        margin-top: 60px;
+        text-align: center;
+      }
+      .section5 img{
+        height: 50px;
+        width: 50px;
+      }
+
+       
+
 }
 @media only screen and (max-width: 720px) {
     .container {
         width: 580px;
     }
+    .header {
+        background-image: url("./assets/FonSingle.png");
+        width: 100%;
+    }
+    .icons:nth-child(1){
+        display: none;
+    }
+    .icons:nth-child(2){
+        display: none;
+    }
+    .nav_list{
+        flex-direction: row-reverse;
+    }
+    .nav_link{
+        display: none;
+    }
+    .act{
+        display: block !important;
+    }
+    .section2 h1{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-left: 8px;
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        padding-top: 30px;
+        gap: 20px;
+    }
+    .item:nth-child(3){
+        display: none;
+    }
+    .item{
+        object-fit: cover;
+       }
+       .cat{
+        background-color: #E0BEA2BF;
+        text-align: center;
+        padding-bottom: 10px;
+       }
+       .jumavoy{
+        width: 100%;
+        margin-top: 60px;
+        height: 50px;
+       }
+       .jumavoy:nth-child(){
+        margin-top: 70px;
+       }
+       .jumavoy input{
+        width: 100%;
+        height: 70px;
+       }
+       .jumavoy button{
+        width: 100%;
+        background-color: #E0BEA2BF;
+        height: 70px;
+        font-size: 35px;
+       }
+       .section4{
+        margin-top: 80px;
+       }
+       .footer{
+        width: 100%;
+        gap: 20px;
+       }
+      .last h3{
+        display: none;
+      }
+      .last{
+        margin-top: 35px;
+        font-size: 40px;
+        color: #E0BEA2BF;
+      }
+      .last h5{
+        text-align: center;
+      }
+      .line{
+        height: 1px;
+        width: 100%;
+        background-color: black;
+      }
+      .section5{
+        width: 100%;
+        text-align: center;
+      }
+      .section5 img{
+       text-align: center;
+        height: 60px;
+        width: 60px;
+      }
 
 }
 
@@ -196,4 +421,83 @@ li {
     .act{
         display: block !important;
     }
+    .section2 h1{
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 8px;
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        padding-top: 30px;
+        gap: 20px;
+    }
+    .item:nth-child(3){
+        display: none;
+    }
+    .item:nth-child(4){
+        display: none;
+    }
+    .item{
+        height: 300px;
+        object-fit: cover;
+        position: relative;
+       }
+       .cat{
+        background-color: #E0BEA2BF;
+        padding: 0% 25%;
+        padding-bottom: 10px;
+       }
+       .jumavoy{
+        width: 100%;
+        margin-top: 60px;
+        height: 50px;
+       }
+       .jumavoy:nth-child(){
+        margin-top: 50px;
+       }
+       .jumavoy input{
+        width: 100%;
+        height: 50px;
+       }
+       .jumavoy button{
+        width: 100%;
+        background-color: #E0BEA2BF;
+        height: 50px;
+        font-size: 30px;
+       }
+       .section4{
+        margin-top: 60px;
+       }
+       .footer{
+        width: 100%;
+        margin-top: 90px;
+       }
+      .last h3{
+        display: none;
+      }
+      .last{
+        margin-top: 15px;
+        font-size: 30px;
+        color: #E0BEA2BF;
+      }
+      .last h5{
+        margin-left: 30%;
+      }
+      .line{
+        height: 1px;
+        width: 100%;
+        background-color: black;
+      }
+      .section5{
+        width: 100%;
+        margin-top: 70px;
+        margin-left: 35%;
+      }
+      .section5 img{
+        margin: 10px;
+        margin-left: 20px;
+        height: 30px;
+        width: 30px;
+      }
 }
