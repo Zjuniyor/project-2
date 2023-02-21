@@ -69,7 +69,18 @@ li {
 .burger-btn {
     flex-basis: 5%;
 }
-
+.text-c{
+    text-align: center;
+}
+.mt-70{
+    margin-top: 70px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.mt-15{
+    margin-top: 15px;
+}
 .burger-btn>span>i {
     font-size: 25px;
 }
@@ -125,6 +136,45 @@ li {
 .starter {
     height: 860px;
 }
+.item{
+    height: 480px;
+    width: 300px;
+}
+.cat{
+    background-color: #E0BEA2BF;
+    width: auto;
+    font-size: 20px;
+    padding-bottom: 7px;
+}
+.section2 h1{
+    padding: 20px;
+    font-size: 30px;
+}
+.cat h1{
+    height: 50px;
+}
+.wid100{
+    width: 100%;
+}
+.jumavoy{
+    font-size: 22px;
+}
+.btn{
+    width: 100%;
+    background-color: #E0BEA2BF;
+    text-align: center;
+}
+.btn a{
+    font-size: 25px;
+    text-decoration: none;
+    background-color: #E0BEA2BF;
+}
+input{
+    font-size: 25px;
+}
+.section5{
+    display: none;
+}
 
 @media only screen and (max-width: 1240px) {
     .container {
@@ -134,11 +184,12 @@ li {
         background-image: url('./assets/FonFull.png');
     }
     .section2 h1{
-        margin-left: 10px;
-        margin-top: 30px;
+        /* margin-left: 10px;
+        margin-top: 30px; */
         font-size: 40px;
     }
     .content{
+        gap: 15px;
         margin-top: 55px;
         width: 100%;
         display: flex;
@@ -146,12 +197,17 @@ li {
         text-align: center;
     }
     .item{
+        height: 400px;
         width: 250px;
     }
     .cat{
+        height: 85px;
         width: 250px;
         background-color: #E0BEA2BF;
         text-align: center;
+    }
+    .cat h1{
+        margin-bottom: 20px;
     }
     .jumavoy{
         width: 100%;
@@ -164,23 +220,29 @@ li {
        }
        .jumavoy input{
         font-size: 20px;
-        width: 90%;
+        width: 100%;
         height: 70px;
        }
-       .jumavoy button{
-        width: 90%;
+       .btn{
+        width: 100%;
         background-color: #E0BEA2BF;
         height: 70px;
+        padding: 10px;
+       }
+       .btn a{
         font-size: 40px;
        }
        .footer{
         width: 100%;
         display: flex;
-        margin-top: 250px;
+        /* margin-top: 250px; */
         text-align: center;
        }
+       .footer :nth-child(2){
+        display: none;
+       }
        .last{
-        margin-left: 20px;
+        /* margin-left: 20px; */
         width: 250px;
         font-style: normal;
         font-weight: 400;
@@ -218,13 +280,99 @@ li {
     .logo{
         width: 120px;
     }
+    .section2 h1{
+        /* margin-left: 10px;
+        margin-top: 30px; */
+        font-size: 40px;
+    }
+    .content{
+        gap: 15px;
+        margin-top: 55px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .content :nth-child(3){
+        display: none;
+    }
+    .item{
+        height: 400px;
+        width: 250px;
+    }
+    .cat{
+        height: 85px;
+        width: 250px;
+        background-color: #E0BEA2BF;
+        text-align: center;
+    }
+    .cat h1{
+        margin-bottom: 20px;
+    }
+    .jumavoy{
+        width: 100%;
+        margin-top: 80px;
+        text-align: center;
+        font-size: 35px;
+       }
+       .jumavoy:nth-child(){
+        margin-top: 50px;
+       }
+       .jumavoy input{
+        font-size: 20px;
+        width: 100%;
+        height: 70px;
+       }
+       .btn{
+        width: 100%;
+        background-color: #E0BEA2BF;
+        height: 70px;
+        padding: 10px;
+       }
+       .btn a{
+        font-size: 40px;
+       }
+       .footer{
+        width: 100%;
+        display: flex;
+        /* margin-top: 250px; */
+        text-align: center;
+       }
+       .footer :nth-child(2){
+        display: block !important;
+       }
+       .footer :nth-child(4){
+        display: none !important;
+       }
+       .last{
+        /* margin-left: 20px; */
+        width: 250px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+       }
+       .section5{
+        display: block !important;
+        width: 100%;
+        margin-top: 90px;
+        text-align: center;
+      }
+      .section5 img{
+        height: 80px;
+        width: 80px;
+      }
 }
 
 @media only screen and (max-width: 840px) {
     .container {
         width: 720px;
     }
-
+    .nav>ul :nth-child(3){
+        display: none !important;
+    }
+    .header_icon_box{
+        display: block;
+    }
     .header{
         background-image: url(assets/FonTap.png)
     }
@@ -266,10 +414,12 @@ li {
         width: 100%;
         height: 50px;
        }
-       .jumavoy button{
+       .btn{
+        padding: 5px;
         width: 100%;
-        background-color: #E0BEA2BF;
-        height: 50px;
+        /* background-color: #E0BEA2BF; */
+       }
+       .btn a{
         font-size: 30px;
        }
        .footer{
@@ -278,15 +428,17 @@ li {
         margin-top: 250px;
         text-align: center;
        }
-       .last:first-child{
+       /* .last:first-child{
         display: none;
-       }
+       } */
        .last{
-        margin-left: 20px;
-        width: 180px;
-        font-style: normal;
-        font-weight: 200;
-        font-size: 16px;
+        display:  block !important;
+        font-size: 25px;
+        color: #E0BEA2BF;
+       }
+       .line{
+        display: block !important;
+        width: 100%;
        }
        .section5{
         width: 100%;
@@ -313,14 +465,15 @@ li {
         display: none;
     }
     .icons:nth-child(2){
-        display: none;
+        display:none;
     }
     .nav_list{
         flex-direction: row-reverse;
     }
-    .nav_link{
-        display: none;
-    }
+    /* .nav_link{
+        width: 100%;
+        display: flex;
+    } */
     .act{
         display: block !important;
     }
@@ -339,12 +492,17 @@ li {
         display: none;
     }
     .item{
+        height: 300px;
+        width: 190px;
         object-fit: cover;
        }
+       .cat h1{
+        padding-bottom: 50px;
+       }
        .cat{
-        background-color: #E0BEA2BF;
-        text-align: center;
-        padding-bottom: 10px;
+        height: 40px;
+        width: 190px;
+        padding-bottom: 50px;
        }
        .jumavoy{
         width: 100%;
@@ -365,36 +523,38 @@ li {
         font-size: 35px;
        }
        .section4{
-        margin-top: 80px;
+        margin-top: 160px;
+       }
+       .item{
+        background-color: #E0BEA2BF;
+       }
+       .cat h1{
+        margin: 0;
+        font-size: 20px;
        }
        .footer{
         width: 100%;
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
        }
       .last h3{
         display: none;
       }
       .last{
         margin-top: 35px;
-        font-size: 40px;
-        color: #E0BEA2BF;
+        font-size: 25px;
       }
       .last h5{
         text-align: center;
       }
       .line{
         height: 1px;
-        width: 100%;
+        width: 240px;
         background-color: black;
       }
       .section5{
-        width: 100%;
-        text-align: center;
-      }
-      .section5 img{
-       text-align: center;
-        height: 60px;
-        width: 60px;
+        display: block !important;
       }
 
 }
@@ -445,17 +605,19 @@ li {
        }
        .cat{
         background-color: #E0BEA2BF;
-        padding: 0% 25%;
-        padding-bottom: 10px;
+       }
+       .cat h1{
+        margin: 0;
+        font-size: 16px;
        }
        .jumavoy{
         width: 100%;
-        margin-top: 60px;
+        margin-top: 150px;
         height: 50px;
        }
-       .jumavoy:nth-child(){
+       /* .jumavoy:nth-child(){
         margin-top: 50px;
-       }
+       } */
        .jumavoy input{
         width: 100%;
         height: 50px;
@@ -468,31 +630,37 @@ li {
        }
        .section4{
         margin-top: 60px;
-       }
-       .footer{
+    }
+    .footer{
+        margin-top: 350px;
+        text-align: center;
         width: 100%;
-        margin-top: 90px;
+        display: flex;
+        flex-direction: column;
+       }
+       .last h1{
+        font-size: 16px;
        }
       .last h3{
         display: none;
       }
       .last{
-        margin-top: 15px;
+        /* margin-left: 20%; */
         font-size: 30px;
         color: #E0BEA2BF;
       }
-      .last h5{
+      /* .last h5{
         margin-left: 30%;
-      }
+      } */
       .line{
         height: 1px;
         width: 100%;
         background-color: black;
       }
       .section5{
-        width: 100%;
-        margin-top: 70px;
-        margin-left: 35%;
+        display: block !important; 
+        text-align: center;
+        width: 100%; 
       }
       .section5 img{
         margin: 10px;

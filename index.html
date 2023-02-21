@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-
     <header class="header">
       <div class="container">
         <div class="row j-between a-center pt-24">
@@ -20,12 +25,22 @@
             <ul class="row j-between a-center nav_list">
               <div class="row gap-20">
                 <li class="nav_item"><a class="nav_link" href="#">New</a></li>
-                <li class="nav_item"><a class="nav_link" href="#">Catalog</a></li>
+                <li class="nav_item">
+                  <a class="nav_link" href="#">Catalog</a>
+                </li>
                 <li class="nav_item"><a class="nav_link" href="#">For</a></li>
               </div>
               <div class="row gap-20">
-                <li class="nav_item"><a class="nav_link act" href="#">Ru <i class="fa-solid fa-chevron-left"></i></a></li>
-                <li class="nav_item"><a class="nav_link" href="#">UAH <i class="fa-solid fa-chevron-left"></i></a></li>
+                <li class="nav_item">
+                  <a class="nav_link act" href="#"
+                    >Ru <i class="fa-solid fa-chevron-left"></i
+                  ></a>
+                </li>
+                <li class="nav_item">
+                  <a class="nav_link" href="#"
+                    >UAH <i class="fa-solid fa-chevron-left"></i
+                  ></a>
+                </li>
               </div>
             </ul>
           </nav>
@@ -35,15 +50,19 @@
           <div class="header_icon_box">
             <ul class="row j-around">
               <li class="nav_item icons"><i class="fa-solid fa-user"></i></li>
-              <li class="nav_item icons"><i class="fa-solid fa-magnifying-glass"></i></li>
-              <li class="nav_item icons"><i class="fa-regular fa-heart"></i></li>
-              <li class="nav_item icons"><i class="fa-solid fa-cart-shopping"></i></li>
+              <li class="nav_item icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </li>
+              <li class="nav_item icons">
+                <i class="fa-regular fa-heart"></i>
+              </li>
+              <li class="nav_item icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="starter row a-center j-center">
-
-        </div>
+        <div class="starter row a-center j-center"></div>
       </div>
     </header>
 
@@ -64,72 +83,75 @@
       <section>
         <div class="section2 mt-150">
           <h1>Category</h1>
-          <div class="container row a-center j-around">
-            <div class="content">
-                    <div class="item column">
-                      <img src="assets/sct2.png" alt="">
-                      <div class="cat"><H1>Shoes</H1></div>
-                    </div>
-                    <div class="item column">
-                      <img src="assets/right.png" alt="">
-                      <div class="cat"><H1>Coats</H1></div>
-                    </div>
-                    <div class="item column">
-                      <img src="assets/sct21.png" alt="">
-                      <div class="cat"><H1>Jackets</H1></div>
-                    </div>
-                    <div class="item column">
-                      <img src="assets/left.png" alt="">
-                      <div class="cat"><H1>Trousers</H1></div>
-                    </div>
-                  </div>
-                </div>
+          <div class="container">
+            <div class="content row a-center j-around">
+              <div class="item column">
+                <img src="assets/sct2.png" alt="" />
+                <div class="cat text-c"><h1>Shoes</h1></div>
+              </div>
+              <div class="item column">
+                <img src="assets/right.png" alt="" />
+                <div class="cat text-c"><h1>Coats</h1></div>
+              </div>
+              <div class="item column">
+                <img src="assets/sct21.png" alt="" />
+                <div class="cat text-c"><h1>Jackets</h1></div>
+              </div>
+              <div class="item column">
+                <img src="assets/left.png" alt="" />
+                <div class="cat text-c"><h1>Trousers</h1></div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section>
-        <div class="section3 container">
-          <div class="width2 column a-center ml-300 mt-150">
-            <div class="jumavoy">
-              <h2>Узнайте  первым о новинках</h2>
+        <div class="section3 mt-100">
+          <div class="container">
+            <div class="jumavoy column text-c">
+              <h2>Узнайте первым о новинках</h2>
               <form class="mt-15">
-                <input type="text" placeholder="Enter your email">
+                <input class="wid100" type="text" placeholder="Enter your email" />
               </form>
-              <div class="btn mt-15">
+              <div class="btn mt-15 a">
                 <button><a href="#">Follow</a></button>
               </div>
-              <p class="mt-15">Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями конфиденциальности.
+              <p class="mt-15">
+                Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих
+                персональных данных и ознакомлен(а) с условиями
+                конфиденциальности.
               </p>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="section4">
-          <div class="container row j-around">
-            <div class="footer">
+        <div class="section4 mt-100">
+          <div class="container">
+            <div class="footer row j-around">
               <div class="last column">
-                <h5>КОМПАНИЯ </h5>
+                <h1>КОМПАНИЯ</h1>
                 <div class="line"></div>
                 <h3>О нас</h3>
                 <h3>Контакты</h3>
                 <h3>Бонусная система</h3>
               </div>
               <div class="last column">
-                <h5>КОМПАНИЯ</h5>
+                <h1>КОМПАНИЯ</h1>
                 <div class="line"></div>
                 <h3>О нас</h3>
                 <h3>Контакты</h3>
                 <h3>Бонусная система</h3>
               </div>
               <div class="last column">
-                <h5>КОМПАНИЯ</h5>
+                <h1>КОМПАНИЯ</h1>
                 <div class="line"></div>
                 <h3>О нас</h3>
                 <h3>Контакты</h3>
                 <h3>Бонусная система</h3>
               </div>
               <div class="last column">
-                <h5>КОМПАНИЯ</h5>
+                <h1>КОМПАНИЯ</h1>
                 <div class="line"></div>
                 <h3>О нас</h3>
                 <h3>Контакты</h3>
@@ -141,8 +163,8 @@
       </section>
       <section>
         <div class="section5">
-          <img src="assets/inst.png" alt="">
-          <img src="assets/tg.png" alt="">
+          <img src="assets/inst.png" alt="instagram" />
+          <img src="assets/tg.png" alt="Telegram" />
           <h4>+38(073) 096 36 44</h4>
           <h4>info@yanki.com</h4>
         </div>
