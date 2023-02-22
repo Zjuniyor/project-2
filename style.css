@@ -84,7 +84,82 @@ li {
 
 }
 
+/* Header */
+.header {
+    display: block;
+    width: 100%;
+    position: relative;
+    background-image: url('./assets/FonFull.png');
+    background-position: center;
+    background-size: cover;
+    padding-top: 30px;
+}
 
+.burger-btn {
+    flex-basis: 5%;
+}
+.text-c{
+    text-align: center;
+}
+.mt-70{
+    margin-top: 70px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.burger-btn>span>i {
+    font-size: 25px;
+}
+
+.nav {
+    flex-basis: 80%;
+}
+
+.nav>ul {
+    padding: 0 20px;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+}
+
+.header_icon_box {
+    flex-basis: 15%;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.nav-item {
+    line-height: 1.6;
+}
+
+.fa-solid,
+.fa-regular {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.nav_link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+.nav_link i {
+    transform: rotate(270deg);
+    margin-left: 3px;
+}
 
 
 
@@ -207,6 +282,45 @@ footer .title-5 {
 .section5 {
     display: none;
 }
+.item{
+    height: 480px;
+    width: 300px;
+}
+.cat{
+    background-color: #E0BEA2BF;
+    width: auto;
+    font-size: 20px;
+    padding-bottom: 7px;
+}
+.section2 h1{
+    padding: 20px;
+    font-size: 30px;
+}
+.cat h1{
+    height: 50px;
+}
+.wid100{
+    width: 100%;
+}
+.jumavoy{
+    font-size: 22px;
+}
+.btn{
+    width: 100%;
+    background-color: #E0BEA2BF;
+    text-align: center;
+}
+.btn a{
+    font-size: 25px;
+    text-decoration: none;
+    background-color: #E0BEA2BF;
+}
+input{
+    font-size: 25px;
+}
+.section5{
+    display: none;
+}
 
 @media only screen and (max-width: 1240px) {
     .container {
@@ -255,7 +369,7 @@ footer .title-5 {
     .footer {
         width: 100%;
         display: flex;
-        margin-top: 250px;
+        /* margin-top: 250px; */
         text-align: center;
     }
 
@@ -307,6 +421,87 @@ footer .title-5 {
     .logo {
         width: 120px;
     }
+    .section2 h1{
+        /* margin-left: 10px;
+        margin-top: 30px; */
+        font-size: 40px;
+    }
+    .content{
+        gap: 15px;
+        margin-top: 55px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .content :nth-child(3){
+        display: none;
+    }
+    .item{
+        height: 400px;
+        width: 250px;
+    }
+    .cat{
+        height: 85px;
+        width: 250px;
+        background-color: #E0BEA2BF;
+        text-align: center;
+    }
+    .cat h1{
+        margin-bottom: 20px;
+    }
+    .jumavoy{
+        width: 100%;
+        margin-top: 80px;
+        text-align: center;
+        font-size: 35px;
+       }
+       .jumavoy:nth-child(){
+        margin-top: 50px;
+       }
+       .jumavoy input{
+        font-size: 20px;
+        width: 100%;
+        height: 70px;
+       }
+       .btn{
+        width: 100%;
+        background-color: #E0BEA2BF;
+        height: 70px;
+        padding: 10px;
+       }
+       .btn a{
+        font-size: 40px;
+       }
+       .footer{
+        width: 100%;
+        display: flex;
+        /* margin-top: 250px; */
+        text-align: center;
+       }
+       .footer :nth-child(2){
+        display: block !important;
+       }
+       .footer :nth-child(4){
+        display: none !important;
+       }
+       .last{
+        /* margin-left: 20px; */
+        width: 250px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+       }
+       .section5{
+        display: block !important;
+        width: 100%;
+        margin-top: 90px;
+        text-align: center;
+      }
+      .section5 img{
+        height: 80px;
+        width: 80px;
+      }
 }
 
 @media only screen and (max-width: 840px) {
@@ -366,8 +561,9 @@ footer .title-5 {
 
     .jumavoy button {
         width: 100%;
-        background-color: #E0BEA2BF;
-        height: 50px;
+        /* background-color: #E0BEA2BF; */
+       }
+       .btn a{
         font-size: 30px;
     }
 
